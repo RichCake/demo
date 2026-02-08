@@ -15,8 +15,8 @@ class LoginView(ft.View):
         title = ft.Text("Вход", size=20)
         self.login_field = ft.TextField(label="Логин")
         self.password_field = ft.TextField(label="Пароль", password=True)
-        submit_btn = ft.Button("Войти", on_click=self.submit)
-        guest_btn = ft.Button("Войти как Гость", on_click=self.guest)
+        submit_btn = ft.Button("Войти", on_click=self.submit, bgcolor="#00FA9A")
+        guest_btn = ft.Button("Войти как Гость", on_click=self.guest, bgcolor="#00FA9A")
 
         self.controls = [
             ft.Column(

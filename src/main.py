@@ -6,6 +6,7 @@ from src.login import LoginView
 
 def main(page: ft.Page):
     page.title = "Товары"
+    page.theme = ft.Theme(font_family="times")
 
     def on_route_change(route):
         page.views.clear()
